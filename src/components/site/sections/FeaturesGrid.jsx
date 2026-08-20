@@ -51,7 +51,7 @@ const groups = [
       { icon: BarChart3, name: "Financial & Operational Reporting", desc: "Clear reporting on revenue, productivity, utilisation and job profitability." },
       { icon: LayoutDashboard, name: "Customer Portal", desc: "Give customers their own portal to view jobs and interact digitally." },
       { icon: Truck, name: "Vehicle Management", desc: "Track vehicles, MOT, insurance and mileage in one place." },
-      { icon: Plug, name: "Accounting Integrations", desc: "Connect to your accounting software to keep figures in sync." },
+      { icon: Plug, name: "Xero Integrations", desc: "Sync invoices, contacts and financial data directly with Xero to keep your books accurate and up to date." },
     ],
   },
 ];

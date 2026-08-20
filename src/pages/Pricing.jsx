@@ -17,11 +17,11 @@ const includes = [
   "Project & installation management",
   "Financial & operational reporting",
   "Customer portal",
-  "Vehicle management",
-  "Accounting integrations",
+  "Vehicle management", 
+  "Xero Integrations"
 ];
 
-export default function Pricing() {
+export default function Pricing() {S
   return (
     <>
       <section className="border-b border-border bg-muted/30">
