@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Image } from '@/components/ui/image';
 
-const MOBILE_APP = import.meta.env.VITE_MOBILE_APP_IMAGE_URL || '';
+const MOBILE_APP = '/assets/mobile-app.jpg';
 
 function FallbackMobile() {
   return (

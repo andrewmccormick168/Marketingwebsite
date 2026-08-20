@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Image } from '@/components/ui/image';
 
-const OFFICE_DASHBOARD = import.meta.env.VITE_DASHBOARD_IMAGE_URL || '';
+const OFFICE_DASHBOARD = '/assets/dashboard.jpg';
 
 function FallbackDashboard() {
   return (

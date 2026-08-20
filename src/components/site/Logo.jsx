@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Image } from '@/components/ui/image';
 
-const LOGO_URL = import.meta.env.VITE_MARKETING_LOGO_URL || '';
+const LOGO_URL = '/assets/digitise360-logo.png';
 
 export default function Logo({ className = 'h-8 w-44' }) {
   const [failed, setFailed] = useState(false);
