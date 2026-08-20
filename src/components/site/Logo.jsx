@@ -15,7 +15,7 @@ export default function Logo({ className = 'h-8 w-44' }) {
           src={LOGO_URL}
           alt="DigiTise360"
           fittingType="fit"
-          className={className}
+          className={`${className} object-contain w-auto`}
           onError={() => setFailed(true)}
         />
       ) : (
