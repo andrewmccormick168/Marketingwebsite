@@ -21,7 +21,7 @@ const includes = [
   "Xero Integrations"
 ];
 
-export default function Pricing() {S
+export default function Pricing() {
   return (
     <>
       <section className="border-b border-border bg-muted/30">
