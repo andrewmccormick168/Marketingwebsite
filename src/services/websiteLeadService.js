@@ -14,7 +14,7 @@ export async function submitWebsiteEnquiry({
   const row = {
     enquiry_type: clean(enquiryType),
     name: clean(name),
-    company: clean(company),
+    company_name: clean(company),
     email: clean(email).toLowerCase(),
     phone: clean(phone) || null,
     user_count: clean(userCount) || null,
