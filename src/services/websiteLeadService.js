@@ -21,12 +21,14 @@ export async function submitWebsiteEnquiry({
     message: clean(message) || null,
   };
 
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from('website_enquiries')
-    .insert(row)
-    .select('id')
-    .single();
+    .insert(row);
 
-  if (error) throw error;
-  return data;
+  if (error) {
+    console.error('Website enquiry insert failed:', error);
+    throw error;
+  }
+
+  return { success: true };
 }
