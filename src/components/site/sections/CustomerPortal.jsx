@@ -32,7 +32,7 @@ const points = [
   {
     icon: Wrench,
     title: "Maintenance overview",
-    desc: "Show planned maintenance activity and service information in one place.",
+    desc: "Let customers review upcoming and historic planned maintenance activity for their sites.",
   },
 ];
 
@@ -45,13 +45,13 @@ export default function CustomerPortal() {
             <SectionLabel>Customer Portal</SectionLabel>
 
             <h2 className="mt-5 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl text-balance">
-              Give every customer a live view of their service operation
+              Give customers direct access to the information they need
             </h2>
 
             <p className="mt-5 text-lg text-muted-foreground">
-              DigiTise360 gives customers their own secure portal, helping reduce
-              admin while giving them instant visibility of jobs, quotations,
-              invoices, defects and maintenance activity.
+              Customers can securely check jobs, quotations, invoices, defects
+              and maintenance activity themselves — reducing routine calls and
+              emails back to your office.
             </p>
 
             <div className="mt-8 flex flex-col gap-4">
@@ -76,7 +76,7 @@ export default function CustomerPortal() {
               <img
                 src="/assets/customer-portal.png"
                 alt="DigiTise360 customer portal showing jobs, invoices, defects and maintenance"
-                className="block w-full"
+                className="block w-full object-cover"
               />
             </BrowserFrame>
           </FadeIn>

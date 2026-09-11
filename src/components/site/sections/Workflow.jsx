@@ -72,9 +72,8 @@ export default function Workflow() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-300">
-            DigiTise360 connects every stage of the job lifecycle, keeping the
-            office, engineer, customer and commercial team working from the same
-            live information.
+            Every stage of the job lifecycle follows the same live record, giving
+            office teams, engineers and customers clear information from start to finish.
           </p>
         </FadeIn>
 
@@ -109,11 +108,11 @@ export default function Workflow() {
         <FadeIn delay={0.15}>
           <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-primary/20 bg-primary/10 px-6 py-5 text-center">
             <p className="font-heading text-lg font-bold">
-              One record. One workflow. No duplicated administration.
+              Capture it once. Use it throughout the job.
             </p>
             <p className="mt-1 text-sm text-slate-300">
-              Information captured in the field continues through defects,
-              quotations, remedials, invoicing and reporting.
+              Field information flows straight into defects, quotations,
+              remedials, invoicing and management reporting.
             </p>
           </div>
         </FadeIn>

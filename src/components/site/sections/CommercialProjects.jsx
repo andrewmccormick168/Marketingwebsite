@@ -23,7 +23,7 @@ const items = [
   {
     icon: FolderKanban,
     title: "Installation & project management",
-    desc: "Manage planned work, labour, materials and project activity from one connected record.",
+    desc: "Manage planned work, labour, materials, actual costs and project activity from a single project record.",
   },
   {
     icon: Receipt,
@@ -53,12 +53,12 @@ export default function CommercialProjects() {
             </SectionLabel>
 
             <h2 className="mt-5 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Keep the commercial side connected to the work
+              Know what every job is costing — and earning
             </h2>
 
             <p className="mt-5 text-lg text-slate-300">
-              DigiTise360 keeps quotations, purchase orders, project costs,
-              invoices and reporting tied back to the jobs and sites that created them.
+              Track quotations, purchase orders, labour, materials, project costs
+              and invoices against the work that generated them.
             </p>
 
             <div className="mt-8 rounded-2xl border border-primary/20 bg-primary/10 p-6">

@@ -38,7 +38,7 @@ const automations = [
   {
     icon: Workflow,
     title: "Connected next steps",
-    desc: "Keep the process moving from job to defect, quote, remedial work and invoice without duplicated admin.",
+    desc: "Carry job information into defects, quotations, remedials and invoices without rekeying the same details.",
   },
 ];
 
@@ -51,13 +51,13 @@ export default function Automation() {
             <SectionLabel>Automation</SectionLabel>
 
             <h2 className="mt-5 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl text-balance">
-              Keep the work moving without chasing every next step
+              Let routine admin happen in the background
             </h2>
 
             <p className="mt-5 text-lg text-muted-foreground">
-              DigiTise360 helps automate the repetitive parts of service delivery,
-              customer communication and commercial administration so your office
-              team can focus on the work that needs attention.
+              Automate repetitive service, customer and commercial tasks so your
+              office team spends less time sending reminders, chasing approvals
+              and re-entering information.
             </p>
 
             <div className="mt-8 rounded-2xl border border-primary/20 bg-background p-6 shadow-sm">

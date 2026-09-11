@@ -16,12 +16,12 @@ const points = [
   {
     icon: RefreshCcw,
     title: "Stay ahead of due dates",
-    desc: "Keep upcoming maintenance visible so contract obligations are not missed.",
+    desc: "Monitor upcoming visits and service dates so contractual obligations are not missed.",
   },
   {
     icon: CheckCircle2,
     title: "Create repeatable workflows",
-    desc: "Move planned maintenance through engineer attendance, completion and reporting.",
+    desc: "Take each planned visit from scheduling through engineer attendance, completion and reporting.",
   },
   {
     icon: ShieldCheck,
@@ -42,8 +42,8 @@ export default function MaintenanceOperations() {
           </h2>
 
           <p className="mt-5 text-lg text-muted-foreground">
-            DigiTise360 helps service businesses manage recurring maintenance,
-            contract obligations and upcoming visits without relying on spreadsheets.
+            Plan recurring servicing, monitor upcoming visits and manage contract
+            obligations without relying on spreadsheets or manual reminders.
           </p>
         </FadeIn>
 
@@ -53,7 +53,7 @@ export default function MaintenanceOperations() {
               <img
                 src="/assets/maintenance-scheduler.png"
                 alt="DigiTise360 planned maintenance scheduler"
-                className="block w-full"
+                className="block w-full object-cover"
               />
             </BrowserFrame>
           </FadeIn>

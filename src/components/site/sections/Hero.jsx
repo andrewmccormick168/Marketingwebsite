@@ -25,9 +25,9 @@ export default function Hero() {
 
           <FadeIn delay={0.1}>
             <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground text-balance">
-              DigiTise360 connects your office, engineers, customers and commercial
-              workflows in real time — from the first callout and scheduled visit
-              through to defects, quotations, reports and invoicing.
+              Manage jobs, engineers, customers and commercial activity in real time —
+              from the first callout and scheduled visit through to defects,
+              quotations, reports and invoicing.
             </p>
           </FadeIn>
 
@@ -37,16 +37,16 @@ export default function Hero() {
         </div>
 
         <FadeIn delay={0.2} y={28}>
-          <div className="relative mx-auto mt-16 max-w-6xl">
+          <div className="relative mx-auto mt-16 max-w-[88rem]">
             <BrowserFrame url="app.digitise360.co.uk/dashboard">
               <img
                 src="/assets/dashboard.jpg"
                 alt="DigiTise360 operations dashboard"
-                className="block w-full"
+                className="block w-full object-cover"
               />
             </BrowserFrame>
 
-            <div className="absolute -bottom-14 right-4 hidden w-[220px] overflow-hidden rounded-[2rem] border-[6px] border-slate-950 bg-slate-950 shadow-2xl lg:block">
+            <div className="absolute -bottom-16 right-6 hidden w-[250px] overflow-hidden rounded-[2.25rem] border-[7px] border-slate-950 bg-slate-950 shadow-2xl xl:block">
               <img
                 src="/assets/mobile-app.jpg"
                 alt="DigiTise360 engineer mobile app"
