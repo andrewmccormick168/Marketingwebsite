@@ -1,7 +1,5 @@
 import React from "react";
 import { FadeIn, CTAButtons, BrowserFrame } from "@/components/site/ui";
-import DashboardMockup from "@/components/site/DashboardMockup";
-import MobileMockup from "@/components/site/MobileMockup";
 
 export default function Hero() {
   return (
@@ -10,38 +8,70 @@ export default function Hero() {
       <div className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-16 sm:px-6 sm:pt-24 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <FadeIn>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-muted-foreground shadow-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               Field Service Management Software · UK
             </span>
           </FadeIn>
+
           <FadeIn delay={0.05}>
             <h1 className="mt-6 font-heading text-4xl font-extrabold leading-[1.05] tracking-tight text-balance sm:text-5xl lg:text-6xl">
-              Field Service Management. <span className="text-primary">Simplified.</span>
+              Run your entire field operation.
+              <span className="text-primary"> From one platform.</span>
             </h1>
           </FadeIn>
+
           <FadeIn delay={0.1}>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground text-balance">
-              Manage your entire field operation from one connected platform. From the first job to the final report,
-              DigiTise360 keeps your office, engineers and customers connected.
+            <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground text-balance">
+              DigiTise360 connects your office, engineers, customers and commercial
+              workflows in real time — from the first callout and scheduled visit
+              through to defects, quotations, reports and invoicing.
             </p>
           </FadeIn>
+
           <FadeIn delay={0.15}>
             <CTAButtons className="mt-8 justify-center" size="lg" />
           </FadeIn>
         </div>
 
-        {/* Product mockup */}
         <FadeIn delay={0.2} y={28}>
-          <div className="relative mx-auto mt-16 max-w-5xl">
+          <div className="relative mx-auto mt-16 max-w-6xl">
             <BrowserFrame url="app.digitise360.co.uk/dashboard">
-              <DashboardMockup />
+              <img
+                src="/assets/dashboard.jpg"
+                alt="DigiTise360 operations dashboard"
+                className="block w-full"
+              />
             </BrowserFrame>
-            <div className="absolute -bottom-10 -right-4 hidden lg:block">
-              <MobileMockup />
+
+            <div className="absolute -bottom-14 right-4 hidden w-[220px] overflow-hidden rounded-[2rem] border-[6px] border-slate-950 bg-slate-950 shadow-2xl lg:block">
+              <img
+                src="/assets/mobile-app.jpg"
+                alt="DigiTise360 engineer mobile app"
+                className="block w-full rounded-[1.6rem]"
+              />
             </div>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.25}>
+          <div className="mx-auto mt-20 grid max-w-4xl grid-cols-2 gap-3 text-center sm:grid-cols-4">
+            {[
+              ["Office", "Live operations"],
+              ["Field", "Engineer mobile"],
+              ["Commercial", "Quote to invoice"],
+              ["Customers", "Self-service portal"],
+            ].map(([title, text]) => (
+              <div
+                key={title}
+                className="rounded-xl border border-border bg-background/90 px-4 py-4 shadow-sm backdrop-blur"
+              >
+                <p className="text-sm font-bold">{title}</p>
+                <p className="mt-1 text-xs text-muted-foreground">{text}</p>
+              </div>
+            ))}
           </div>
         </FadeIn>
       </div>

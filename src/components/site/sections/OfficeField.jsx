@@ -1,7 +1,5 @@
 import React from "react";
 import { FadeIn, SectionLabel, BrowserFrame } from "@/components/site/ui";
-import DashboardMockup from "@/components/site/DashboardMockup";
-import MobileMockup from "@/components/site/MobileMockup";
 import { Monitor, Smartphone, ArrowRight, ArrowLeft } from "lucide-react";
 
 const office = [
@@ -51,8 +49,12 @@ export default function OfficeField() {
                 ))}
               </ul>
             </div>
-            <BrowserFrame url="app.digitise360.co.uk/scheduler">
-              <DashboardMockup />
+            <BrowserFrame url="app.digitise360.co.uk/calendar">
+              <img
+                src="/assets/dashboard.jpg"
+                alt="DigiTise360 office operations platform"
+                className="block w-full"
+              />
             </BrowserFrame>
           </div>
         </FadeIn>
@@ -61,7 +63,13 @@ export default function OfficeField() {
         <FadeIn delay={0.15} className="mt-20">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div className="order-2 flex justify-center lg:order-1">
-              <MobileMockup />
+              <div className="w-full max-w-[300px] overflow-hidden rounded-[2rem] border-[7px] border-slate-950 bg-slate-950 shadow-2xl">
+                <img
+                  src="/assets/mobile-app.jpg"
+                  alt="DigiTise360 engineer mobile app"
+                  className="block w-full rounded-[1.5rem]"
+                />
+              </div>
             </div>
             <div className="order-1 lg:order-2">
               <span className="inline-flex items-center gap-2 text-sm font-bold text-primary">

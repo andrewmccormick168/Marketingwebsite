@@ -4,12 +4,36 @@ import { Flame, Zap, Wrench, Building2, ShieldCheck, ArrowRight } from "lucide-r
 import { FadeIn, SectionLabel } from "@/components/site/ui";
 
 const industries = [
-  { icon: Flame, name: "Fire & Security", desc: "Servicing, installations and compliance for alarm and security systems." },
-  { icon: Zap, name: "Electrical", desc: "EICRs, fixed-wiring and remedial works with digital certification." },
-  { icon: Wrench, name: "Plumbing & Heating", desc: "Reactive repairs, boiler servicing and planned maintenance." },
-  { icon: Building2, name: "M&E", desc: "Mechanical and electrical contractors managing multi-trade workloads." },
-  { icon: ShieldCheck, name: "Facilities Management", desc: "Hard and soft FM services across portfolios and contracts." },
-  { icon: Wrench, name: "Service & Maintenance Contractors", desc: "Planned and reactive maintenance with full contract visibility." },
+  {
+    icon: Flame,
+    name: "Fire & Security",
+    desc: "Manage fire alarm, CCTV, access control, intruder, emergency lighting and life-safety work including PPM, defects, certificates, remedials and customer approvals.",
+  },
+  {
+    icon: Zap,
+    name: "Electrical",
+    desc: "Manage planned and reactive electrical work, digital reports, certification, remedials, quotations and engineer scheduling.",
+  },
+  {
+    icon: Wrench,
+    name: "Plumbing & Heating",
+    desc: "Control reactive repairs, servicing, recurring maintenance, engineer attendance and customer communication from one platform.",
+  },
+  {
+    icon: Building2,
+    name: "M&E",
+    desc: "Coordinate multi-trade projects, service activity, labour, materials, purchase orders, commercial reporting and customer visibility.",
+  },
+  {
+    icon: ShieldCheck,
+    name: "Facilities Management",
+    desc: "Manage PPM, reactive calls, subcontract activity, SLAs, customer sites, defects, service history and operational reporting across portfolios.",
+  },
+  {
+    icon: Wrench,
+    name: "Service & Maintenance Contractors",
+    desc: "Automate recurring maintenance, notify customers when visits are due, schedule engineers, capture digital reports and move work through quote, remedial and invoice stages.",
+  },
 ];
 
 export default function IndustriesGrid() {
