@@ -11,14 +11,24 @@ export async function submitWebsiteEnquiry({
   userCount = '',
   message = '',
 }) {
-  const row = {
-    enquiry_type: clean(enquiryType),
+  const payload = {
+    enquiryType: clean(enquiryType),
     name: clean(name),
-    company_name: clean(company),
+    company: clean(company),
     email: clean(email).toLowerCase(),
-    phone: clean(phone) || null,
-    user_count: clean(userCount) || null,
-    message: clean(message) || null,
+    phone: clean(phone),
+    userCount: clean(userCount),
+    message: clean(message),
+  };
+
+  const row = {
+    enquiry_type: payload.enquiryType,
+    name: payload.name,
+    company_name: payload.company,
+    email: payload.email,
+    phone: payload.phone || null,
+    user_count: payload.userCount || null,
+    message: payload.message || null,
   };
 
   const { error } = await supabase
@@ -28,6 +38,21 @@ export async function submitWebsiteEnquiry({
   if (error) {
     console.error('Website enquiry insert failed:', error);
     throw error;
+  }
+
+  // Notification is deliberately best-effort.
+  // A saved customer enquiry must not appear to fail just because email does.
+  try {
+    const { error: notificationError } = await supabase.functions.invoke(
+      'notifyWebsiteEnquiry',
+      { body: payload }
+    );
+
+    if (notificationError) {
+      console.error('Website enquiry notification failed:', notificationError);
+    }
+  } catch (notificationError) {
+    console.error('Website enquiry notification failed:', notificationError);
   }
 
   return { success: true };
