@@ -8,10 +8,11 @@ import { Link } from 'react-router-dom';
 import { submitWebsiteEnquiry } from '@/services/websiteLeadService';
 
 const perks = [
-  'A guided walkthrough of the DigiTise360 platform',
-  'See job scheduling, the engineer app and reporting in action',
-  'Discuss how it adapts to your trade and workflows',
-  'No obligation — just a clear look at how it works',
+  'A guided walkthrough of the full DigiTise360 platform',
+  'See scheduling, engineer mobile, PPM, defects and customer workflows in action',
+  'See quotations, digital acceptance, invoicing and commercial controls',
+  'Discuss how DigiTise360 could fit your current service operation',
+  'No obligation — just a practical look at how the platform works',
 ];
 
 export default function BookADemo() {
@@ -50,7 +51,7 @@ export default function BookADemo() {
           <FadeIn className="max-w-3xl">
             <SectionLabel>Book a Demo</SectionLabel>
             <h1 className="mt-5 font-heading text-4xl font-extrabold tracking-tight sm:text-5xl text-balance">See DigiTise360 in action</h1>
-            <p className="mt-5 text-lg text-muted-foreground">Book a personalised demo and we’ll show you how DigiTise360 brings your office, engineers and customers together on one simple platform.</p>
+            <p className="mt-5 text-lg text-muted-foreground">Book a personalised demo and see how DigiTise360 manages the full service lifecycle — from scheduling and engineer attendance through maintenance, defects, quotations, invoicing and customer visibility.</p>
           </FadeIn>
         </div>
       </section>

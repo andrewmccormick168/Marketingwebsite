@@ -31,7 +31,7 @@ export default function Contact() {
       setSubmitted(true);
     } catch (err) {
       console.error('Contact enquiry failed:', err);
-      setError('We could not send your message. Please try again or email info@digitise360.co.uk.');
+      setError('We could not send your message. Please try again or email info@digitise360.com.');
     } finally {
       setSubmitting(false);
     }
@@ -44,10 +44,10 @@ export default function Contact() {
           <FadeIn className="max-w-3xl">
             <SectionLabel>Contact</SectionLabel>
             <h1 className="mt-5 font-heading text-4xl font-extrabold tracking-tight sm:text-5xl text-balance">
-              Let’s talk about your field operation
+              Let’s talk about how you run your operation
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Whether you’re ready for a demo, need Enterprise pricing for more than 30 users, or just want to find out if DigiTise360 fits your business — get in touch.
+              Whether you want to see the platform in action, discuss pricing or find out how DigiTise360 could fit your current workflows, get in touch.
             </p>
           </FadeIn>
         </div>
@@ -60,7 +60,7 @@ export default function Contact() {
               <div className="flex flex-col gap-6">
                 <div className="flex items-center gap-4 rounded-xl border border-border bg-background p-5">
                   <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-accent text-primary"><Mail className="h-5 w-5" /></div>
-                  <div><p className="text-sm font-bold">Email</p><p className="text-sm text-muted-foreground">info@digitise360.co.uk</p></div>
+                  <div><p className="text-sm font-bold">Email</p><p className="text-sm text-muted-foreground">info@digitise360.com</p></div>
                 </div>
                 <div className="flex items-center gap-4 rounded-xl border border-border bg-background p-5">
                   <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-accent text-primary"><Phone className="h-5 w-5" /></div>
