@@ -17,6 +17,7 @@ import Login from '@/pages/Login';
 import Register from '@/pages/Register';
 import ForgotPassword from '@/pages/ForgotPassword';
 import ResetPassword from '@/pages/ResetPassword';
+import Privacy from '@/pages/Privacy';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/book-a-demo" element={<BookADemo />} />
             <Route path="/start-free-trial" element={<StartFreeTrial />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
