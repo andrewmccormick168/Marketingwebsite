@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "@/components/site/sections/Hero";
+import ProofStats from "@/components/site/sections/ProofStats";
 import Workflow from "@/components/site/sections/Workflow";
 import FeaturesGrid from "@/components/site/sections/FeaturesGrid";
 import OfficeField from "@/components/site/sections/OfficeField";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <ProofStats />
       <Workflow />
       <OfficeField />
       <MaintenanceOperations />
